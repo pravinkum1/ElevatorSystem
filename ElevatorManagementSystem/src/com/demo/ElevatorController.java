@@ -9,10 +9,10 @@ import java.util.TreeMap;
 import java.util.concurrent.ConcurrentSkipListSet;
 
 /**
- * This class act as Elevator Control System keeps the track of all the elevator available in the building
+ * This class act as Elevator Control System keeps the track of all the elevator available in the hotel building
  * and send the elevator on requested floor
- *
  */
+
 public class ElevatorController implements Runnable {
 	
 	private boolean controllerState;
@@ -30,7 +30,7 @@ public class ElevatorController implements Runnable {
 			throw new IllegalStateException("Already instantiated");
 		}
 		controllerState = false;
-		initializeElevators(15);
+		//initializeElevators(15);
 	}
 	
 	  public static ElevatorController getInstance(){
